@@ -226,11 +226,6 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8996
 
-# Set lmkd options
-ro.lmk.critical_upgrade=true
-ro.lmk.upgrade_pressure=40
-ro.lmk.downgrade_pressure=60
-
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
