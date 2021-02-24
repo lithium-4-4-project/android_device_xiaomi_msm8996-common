@@ -120,6 +120,10 @@ function blob_fixup() {
         "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
         "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
         ;;
+    vendor/lib/libmpbase.so)
+        [ "$2" = "" ] && return 0
+        "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+        ;;
     vendor/lib64/libril-qc-hal-qmi.so)
         [ "$2" = "" ] && return 0
         for v in 1.{0..2}; do
