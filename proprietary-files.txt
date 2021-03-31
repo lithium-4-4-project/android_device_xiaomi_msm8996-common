@@ -307,14 +307,11 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 -vendor/bin/loc_launcher|923d85bd727fb809b43fa86adbf739dd2b55285c
 -vendor/bin/lowi-server|5d18cc8854549c366f63cdce29178eb48c9b24b0
 -vendor/bin/xtra-daemon|0d15669c226784e4033ddee6cf396c39ff3d2bdf
--vendor/bin/xtwifi-client|7e5cb0670b20c12fbc5cbf4fb642efdd72e92f46
--vendor/bin/xtwifi-inet-agent|73eb9393ba634d805055eea3fbea64785063be4b
 vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
 vendor/etc/izat.conf|a795b79b68e3705c0334432dded0c0d246f47cb3
 vendor/etc/lowi.conf|a676234460033da29f845a645cc1faf4172efa26
 vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 -vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|3faeada4db08a081852d06bacda693ab2fb4678b
 -vendor/lib64/libcdfw.so|543b8282f4b6719113f04e14dd908137521e2bb5
 -vendor/lib64/libcdfw_remote_api.so|558636f4fa4c17f29cb644c8c6e07766b7240005
