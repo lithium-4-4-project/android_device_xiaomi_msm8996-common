@@ -422,8 +422,8 @@ vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 -vendor/lib64/libreffeature.so
 
 # Media - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
--lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
--lib/libOmxMux.so|e444f3b38f7d2469ff3965243f93180f8fc18329
+-system/lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
+-system/lib/libOmxMux.so|e444f3b38f7d2469ff3965243f93180f8fc18329
 -system_ext/lib/extractors/libmmparserextractor.so|2e4430f1fffdf458ca48f9b27b54edfa50e3bd65
 -system_ext/lib/libavenhancements.so|9372b77cbd6667a2144c55da1adf3859ae37f849
 -system_ext/lib/libmmosal.so;MODULE=libmmosal_system_ext|1e32cc6c1d78ec7d6aa77499dd4c1601b2e52a94
@@ -470,8 +470,8 @@ vendor/etc/sec_config|38ed44170badad7ae9a05f53223e1addf8780083
 -vendor/lib64/libdiag.so|174ff3f940288d2d1503230465dfe917ab9d155b
 
 # QMI (shared dependencies) - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
-etc/permissions/privapp-permissions-qti.xml|937752129fb20114d4c36f251ee4d2571132990c
-etc/sysconfig/qti_whitelist.xml|4fd76e2942b4ad5a7f6cacf1668f710a9488347a
+system/etc/permissions/privapp-permissions-qti.xml|937752129fb20114d4c36f251ee4d2571132990c
+system/etc/sysconfig/qti_whitelist.xml|4fd76e2942b4ad5a7f6cacf1668f710a9488347a
 vendor/etc/qmi_fw.conf|7aa8186a05b3e1ac6ce556bb6e9ae613df0e82c1
 -vendor/lib/libdsi_netctrl.so|ea451bc3c9171ee2c6b475a876b52e9706541168
 -vendor/lib/libdsutils.so|60135d6d64ecba72fa0eb637a434578290beaaff
