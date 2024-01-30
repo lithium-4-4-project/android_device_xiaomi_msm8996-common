@@ -164,9 +164,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_MKE2FS := true
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-
 # Properties
 TARGET_ODM_PROP := $(VENDOR_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
