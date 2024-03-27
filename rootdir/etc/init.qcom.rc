@@ -302,6 +302,9 @@ on boot
     mkdir /data/vendor/dolby 0770 media media
     mkdir /data/vendor/multimedia 0775 system system
 
+on property:init.svc.vendor.qcrild=stopped
+    stop vendor.radio-config-1-1-wrapper
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     write /sys/module/vmpressure/parameters/allocstall_threshold 0
