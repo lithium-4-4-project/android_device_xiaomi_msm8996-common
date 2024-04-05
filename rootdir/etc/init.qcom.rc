@@ -446,8 +446,6 @@ service ppd /vendor/bin/mm-pp-dpps
     task_profiles ServiceCapacityLow
 
 service vendor.ssr_setup /vendor/bin/ssr_setup
-    user root
-    group root
     oneshot
     disabled
 
