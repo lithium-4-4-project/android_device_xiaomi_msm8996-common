@@ -72,9 +72,6 @@ persist.vendor.mwqem.           u:object_r:vendor_mwqem_prop:s0
 ro.nfc.port                u:object_r:vendor_nfc_prop:s0
 persist.vendor.nfc.        u:object_r:vendor_nfc_prop:s0
 
-# Power
-vendor.powerhal.           u:object_r:vendor_power_prop:s0
-
 # Radio
 persist.data_netmgrd_mtu   u:object_r:vendor_default_prop:s0
 persist.data.              u:object_r:vendor_default_prop:s0
