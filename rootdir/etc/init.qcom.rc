@@ -53,6 +53,8 @@ on fs
 
     mount_all /vendor/etc/fstab.qcom --early
 
+    restorecon_recursive /mnt/vendor/persist
+
     # Set permissions for persist partition
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
