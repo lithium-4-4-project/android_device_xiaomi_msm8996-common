@@ -17,8 +17,6 @@
 
 BOARD_VENDOR := xiaomi
 
-BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
-
 VENDOR_PATH := device/xiaomi/msm8996-common
 
 # Architecture
