@@ -190,7 +190,6 @@ persist.log.tag.ContrastColorUtil=S
 persist.log.tag.GoogleTagManager=S
 
 # Media
-debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.vidc.enc.disable.pq=true
 vendor.vidc.debug.level=0
