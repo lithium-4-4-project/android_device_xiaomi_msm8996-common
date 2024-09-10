@@ -298,7 +298,7 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 -vendor/bin/hw/android.hardware.drm@1.4-service.widevine|1ad2e046be16d2ee422925dba60b8ef4d9d10e43
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|467808b3578bf7a40901350cb7c2a1f9db5a340c
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
--vendor/lib64/libwvhidl.so|aa31972bf48749785f3e5d91aaafac21f226ac87
+-vendor/lib64/libwvhidl.so|aa31972bf48749785f3e5d91aaafac21f226ac87|0941b08f58b239e0c41d5b0d30564fac52257fc4
 
 # Gatekeeper
 -vendor/lib64/hw/gatekeeper.msm8996.so
