@@ -233,10 +233,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Superimage flash script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
-
 # For config.fs
 PRODUCT_PACKAGES += \
     fs_config_files
