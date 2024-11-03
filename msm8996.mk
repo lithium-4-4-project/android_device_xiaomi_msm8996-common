@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Gapps
 ifeq ($(WITH_GMS), true)
 $(call inherit-product,vendor/gapps/arm64/arm64-vendor.mk)
@@ -196,11 +199,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     gralloc.msm8996 \
     hwcomposer.msm8996 \
-    memtrack.msm8996 \
     libdisplayconfig \
     libdisplayconfig.qti \
     libgralloc.qti \
@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.memtrack-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_config.cfg \
@@ -227,15 +228,12 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libcrypto_shim.vendor
 
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# For config.fs
-PRODUCT_PACKAGES += \
-    fs_config_files
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -270,6 +268,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+PRODUCT_HIDL_ENABLED := true
 
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
@@ -277,6 +276,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor\
     android.hidl.manager@1.0 \
     android.hidl.memory@1.0.vendor \
+    hwservicemanager \
     libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
@@ -321,13 +321,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_8996_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 # Net
 PRODUCT_PACKAGES += \
@@ -448,6 +444,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Update
+AB_OTA_UPDATER := false
+PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 
 # USB
 PRODUCT_PACKAGES += \

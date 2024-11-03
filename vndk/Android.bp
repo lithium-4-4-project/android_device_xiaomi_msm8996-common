@@ -5,24 +5,6 @@
 //
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_foundation-v33",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: ["v33/arm/libstagefright_foundation-v33.so"],
-        },
-        android_arm64: {
-            srcs: ["v33/arm64/libstagefright_foundation-v33.so"],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-}
-
-cc_prebuilt_library_shared {
     name: "libutils-v33",
     vendor: true,
     strip: {

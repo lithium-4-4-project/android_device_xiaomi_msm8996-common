@@ -74,9 +74,6 @@ vendor.audio.feature.wsa.enable=true
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
 vendor.audio.volume.headset.gain.depcal=true
-vendor.audio.use.sw.ape.decoder=true
-vendor.audio.use.sw.alac.decoder=true
-vendor.audio.flac.sw.decoder.24bit=true
 vendor.voice.conc.fallbackpath=deep-buffer
 vendor.voice.path.for.pcm.voip=true
 vendor.voice.playback.conc.disabled=true
@@ -197,7 +194,6 @@ persist.log.tag.ContrastColorUtil=S
 persist.log.tag.GoogleTagManager=S
 
 # Media
-debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.vidc.enc.disable.pq=true
 vendor.vidc.debug.level=0
