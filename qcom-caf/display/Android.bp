@@ -32,6 +32,8 @@ cc_library_headers {
 }
 
 subdirs = [
+    "gpu_tonemapper",
+    "gralloc",
     "libqservice",
     "libqdutils",
 ]
