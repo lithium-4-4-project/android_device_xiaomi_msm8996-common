@@ -426,10 +426,10 @@ vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 -system/lib/libOmxMux.so|e444f3b38f7d2469ff3965243f93180f8fc18329
 -system_ext/lib/extractors/libmmparserextractor.so|2e4430f1fffdf458ca48f9b27b54edfa50e3bd65
 -system_ext/lib/libavenhancements.so|9372b77cbd6667a2144c55da1adf3859ae37f849
--system_ext/lib/libmmosal.so;MODULE=libmmosal_system_ext|1e32cc6c1d78ec7d6aa77499dd4c1601b2e52a94
+-system_ext/lib/libmmosal.so|1e32cc6c1d78ec7d6aa77499dd4c1601b2e52a94
 -system_ext/lib/libmmparser_lite.so|1662216531f8e5d298505d6bb6fb49c706df2c30
 -system_ext/lib64/libavenhancements.so|884d8585fe7554ee332e6436241a82f27a098890
--system_ext/lib64/libmmosal.so;MODULE=libmmosal_system_ext|2a59fead77df59d9b2c3bec3db4fc0594d0abd73
+-system_ext/lib64/libmmosal.so|2a59fead77df59d9b2c3bec3db4fc0594d0abd73
 vendor/etc/seccomp_policy/mediacodec.policy|3dec19ed56099a36b44cc72ad04ab23b9cc22ace
 vendor/etc/seccomp_policy/mediaextractor.policy|4234a844e9b1aef37397c8cfbd19566966ecd622
 -vendor/lib/libOmxAacDec.so|ce6447b7138f0e0cf365d97668a5ded072683234
@@ -442,9 +442,9 @@ vendor/etc/seccomp_policy/mediaextractor.policy|4234a844e9b1aef37397c8cfbd195669
 -vendor/lib/libOmxQcelp13Dec.so|49291073551d311fde33f76eed6b420615bee382
 -vendor/lib/libOmxVideoDSMode.so|58c76ededad030bf9fc89afd47eab863ddb184fb
 -vendor/lib/libOmxWmaDec.so|f93ed022df05fbf6b7cbda0bd88eebfac47f47da
--vendor/lib/libmmosal.so;MODULE=libmmosal_vendor|28d324f37d535d53916cb894caf3bb037bbf146d
+-vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor|28d324f37d535d53916cb894caf3bb037bbf146d
 -vendor/lib/libvqzip.so|c56eaffef2066339493fa6810930e58556891027
--vendor/lib64/libmmosal.so;MODULE=libmmosal_vendor|d400435a7bb49c1589efd0a63274cbf6d53f0c7b
+-vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor|d400435a7bb49c1589efd0a63274cbf6d53f0c7b
 
 # Peripheral manager - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
 -vendor/bin/pm-proxy|910437c11108aa66e803bbc760ce3998d141a6b4
