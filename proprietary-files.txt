@@ -1,5 +1,17 @@
 # Common proprietary files - from gemini's MIUI package V10.2.2.0.OAAMIXM global stable version, unless pinned
 
+# GNU makefile dependants:
+# - android.hardware.radio.c_shim:
+#   - libril-qc-hal-qmi
+# - libmmcamera_interface
+#   - libmmlib2d_interface
+#   - libmm-qcamera
+# - libwpa_client:
+#   - imsdatadaemon
+#   - lowi-server
+#   - libcne
+#   - libwqe
+
 # ADSP - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
 -vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
 -vendor/bin/dspservice|a7344fc3d27a49df30858ebc3f73ee5818e752d4
@@ -88,7 +100,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b0864744
 -vendor/lib/libjpegdhw.so
 -vendor/lib/libjpegdmahw.so
 -vendor/lib/libjpegehw.so
--vendor/lib/libmm-qcamera.so
+-vendor/lib/libmm-qcamera.so;DISABLE_CHECKELF
 -vendor/lib/libmmcamera2_c2d_module.so
 -vendor/lib/libmmcamera2_cpp_module.so
 -vendor/lib/libmmcamera2_dcrf.so
@@ -139,7 +151,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b0864744
 -vendor/lib/libmmcamera_tuning_lookup.so
 -vendor/lib/libmmcamera_ubifocus_lib.so
 -vendor/lib/libmmjpeg.so
--vendor/lib/libmmlib2d_interface.so
+-vendor/lib/libmmlib2d_interface.so;DISABLE_CHECKELF
 -vendor/lib/libmmqjpeg_codec.so
 -vendor/lib/libmmqjpegdma.so
 -vendor/lib/libmorpho_easy_hdr.so|ee7282c44f003c8979643d451fcae8036717a7a2
@@ -225,11 +237,11 @@ vendor/app/IWlanService/IWlanService.apk|a8bdac9638bc711e23269d2eead3f46a7b3b6a2
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|eb11e72a91439180816e9a1d912cbe42f9019f68
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
 -vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
--vendor/lib64/libcne.so|f7565b0b97975e7021bd007b8387ccc839a8dad9
+-vendor/lib64/libcne.so;DISABLE_CHECKELF|f7565b0b97975e7021bd007b8387ccc839a8dad9
 -vendor/lib64/libcneapiclient.so|b6479678e5b0e8b46d8df5eb8bd610aa17be00d0
 -vendor/lib64/libcneoplookup.so|3ce1039ad657d889f90140cb630eb487d2e711df
 -vendor/lib64/libwms.so|1b91f43e9e9a8f143cddd1d945c63d384c65541c
--vendor/lib64/libwqe.so|5561170b3ee4d9233a0e4f384be08e2e1d01f0f5
+-vendor/lib64/libwqe.so;DISABLE_CHECKELF|5561170b3ee4d9233a0e4f384be08e2e1d01f0f5
 -vendor/lib64/libxml.so|f9b20632e9fd324810caf865faea93e4ff505d91
 -vendor/lib64/vendor.qti.data.factory@2.0.so|748bfbaa57a409b8962e2b1725e1415e423a7315
 -vendor/lib64/vendor.qti.data.factory@2.1.so|bb1f3fa22563282ee24bf03ca681fdc45551feef
@@ -306,7 +318,7 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 
 # GPS - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
 -vendor/bin/loc_launcher|923d85bd727fb809b43fa86adbf739dd2b55285c
--vendor/bin/lowi-server|5d18cc8854549c366f63cdce29178eb48c9b24b0
+-vendor/bin/lowi-server;DISABLE_CHECKELF|5d18cc8854549c366f63cdce29178eb48c9b24b0
 -vendor/bin/xtra-daemon|0d15669c226784e4033ddee6cf396c39ff3d2bdf
 vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
 vendor/etc/izat.conf|a795b79b68e3705c0334432dded0c0d246f47cb3
@@ -575,14 +587,14 @@ vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 -vendor/lib64/libqcrilFramework.so|64386a08a3d8c85cd2117575e7d863a24a8b8850
 -vendor/lib64/libqcrildatactl.so|b3dccb609cfdc64b7bc74d9d3204904d8972df4d
--vendor/lib64/libril-qc-hal-qmi.so|cc70a2e8e2435dee4cb396dadbcd7c4c244287bd|f679e715373bb60322aa397a074e8c02a5328665
+-vendor/lib64/libril-qc-hal-qmi.so;DISABLE_CHECKELF|cc70a2e8e2435dee4cb396dadbcd7c4c244287bd|f679e715373bb60322aa397a074e8c02a5328665
 -vendor/lib64/libril-qc-logger.so|7f80da37d120faffd72838b76d74102c7321e3a3
 -vendor/lib64/qcrild_librilutils.so|0644fb4cfdd39557115ada179a76aab0aa0f1d89
 -vendor/lib64/qtibus.so|0b387ecd1b898f3d3aee6c51783817767a6d1e70
 -vendor/lib64/qtimutex.so|fc156f485519be1cd683f1af3ebb6194ce4ba2d5
 
 # Radio (IMS) - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
--vendor/bin/imsdatadaemon|3f044f84eb4049f1ce8a26af6a6026c1776d22dd
+-vendor/bin/imsdatadaemon;DISABLE_CHECKELF|3f044f84eb4049f1ce8a26af6a6026c1776d22dd
 -vendor/bin/imsqmidaemon|756dcc2d6c7fa26916bc28dedf0c513b1d5e5bfe
 -vendor/bin/imsrcsd|bf29aac14856f29268c01599e5f6c7c6ae520685
 vendor/etc/init/imsdatadaemon.rc|29face37c174aebcd1358f7d7ad0bd4baf83063b

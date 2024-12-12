@@ -41,7 +41,11 @@ function lib_to_package_fixup_vendor_variants() {
             vendor.qti.imsrtpservice@3.0)
             echo "$1_vendor"
             ;;
-        libwpa_client) ;;
+        android.hardware.radio.c_shim@1.0 | \
+            android.hardware.radio.c_shim@1.1 | \
+            android.hardware.radio.c_shim@1.2 | \
+            libmmcamera_interface | \
+            libwpa_client) ;;
         *)
             return 1
             ;;
