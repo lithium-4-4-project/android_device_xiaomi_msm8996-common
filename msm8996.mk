@@ -258,6 +258,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+PRODUCT_HIDL_ENABLED := true
 
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
@@ -265,6 +266,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor\
     android.hidl.manager@1.0 \
     android.hidl.memory@1.0.vendor \
+    hwservicemanager \
     libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
