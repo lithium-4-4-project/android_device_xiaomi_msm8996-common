@@ -427,7 +427,6 @@ vendor/etc/seccomp_policy/mediaextractor.policy|4234a844e9b1aef37397c8cfbd195669
 -vendor/lib/libOmxEvrcDec.so|3f58234a838bed1360ba80c2fe09c05173b1e623
 -vendor/lib/libOmxG711Dec.so|e95941e80d00bf94944868750e1c55ef2aa601ba
 -vendor/lib/libOmxQcelp13Dec.so|49291073551d311fde33f76eed6b420615bee382
--vendor/lib/libOmxVideoDSMode.so|58c76ededad030bf9fc89afd47eab863ddb184fb
 -vendor/lib/libOmxWmaDec.so|f93ed022df05fbf6b7cbda0bd88eebfac47f47da
 -vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor|28d324f37d535d53916cb894caf3bb037bbf146d
 -vendor/lib/libvqzip.so|c56eaffef2066339493fa6810930e58556891027
