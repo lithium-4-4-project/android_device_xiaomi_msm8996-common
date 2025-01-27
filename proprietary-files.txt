@@ -385,10 +385,6 @@ vendor/etc/init/vendor.display.color@1.0-service.rc|bb6700d72ee8d1c5bd5ce1b6bd0c
 -vendor/lib64/vendor.display.color@1.2.so|2fa82f2f822530e2516678987873de4e9e4d0b4d
 -vendor/lib64/vendor.display.postproc@1.0.so|6ed50478f3b6c4ff6871ce715b9944c5e8a42eb7
 
-# Graphics (shared deps) - from LA.UM.10.6.2.r1-01600-89xx.0
--system_ext/lib64/libgralloc.qti.so;MODULE=libgralloc.qti_system_ext|8d5f08f480c121eab46bc64e3d6a8c9913a4c9f2
--system_ext/lib64/libqdMetaData.so;MODULE=libqdMetaData_system_ext|9092b482aa50935b9dc008b79a2ee8305869bd6c
-
 # Graphics (Vulkan) - from LA.UM.10.6.2.r1-01600-89xx.0
 -vendor/lib/hw/vulkan.adreno.so|15185d60e0615009a39b6341755ec9de98725803
 -vendor/lib64/hw/vulkan.adreno.so|09c5d7b60e36fd9bb5aa25e9b4110e8bf9554731
