@@ -457,7 +457,6 @@ vendor/etc/sec_config|38ed44170badad7ae9a05f53223e1addf8780083
 system/etc/permissions/privapp-permissions-qti.xml|937752129fb20114d4c36f251ee4d2571132990c
 system/etc/sysconfig/qti_whitelist.xml|4fd76e2942b4ad5a7f6cacf1668f710a9488347a
 vendor/etc/qmi_fw.conf|7aa8186a05b3e1ac6ce556bb6e9ae613df0e82c1
--vendor/lib/libdsi_netctrl.so|ea451bc3c9171ee2c6b475a876b52e9706541168
 -vendor/lib/libdsutils.so|60135d6d64ecba72fa0eb637a434578290beaaff
 -vendor/lib/libidl.so|dc8d161c035f70e7e6c55461b0238fbe916c5a7d
 -vendor/lib/libpdmapper.so|5cb456461d7c614dba30ea23711b506d44800725
