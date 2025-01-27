@@ -408,12 +408,6 @@ vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 -vendor/lib/libcapiv2vop.so|b738a575fee481914afc103e9f1fb900fd682aeb
 -vendor/lib/libsmwrapper.so|1376bf567a0a225d1ac8c623db4ace9a7e3804f7
 
-# Machine learning
--vendor/etc/lm/ReferenceFeature.xml|7d45c05b5f2457d031e88307f30b2ea958417042
--vendor/lib64/liblearningmodule.so
--vendor/lib64/libmeters.so
--vendor/lib64/libreffeature.so
-
 # Media - from Fairphone/FP3/FP3:13/6.A.018.0/gms-1f4b2a90:user/release-keys
 -system/lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
 -system/lib/libOmxMux.so|e444f3b38f7d2469ff3965243f93180f8fc18329
