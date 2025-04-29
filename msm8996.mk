@@ -442,6 +442,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.basic
 
+# Vendor init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit.xiaomi_8996)
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
