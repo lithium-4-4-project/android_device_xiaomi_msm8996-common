@@ -6,7 +6,6 @@
 /dev/captouch                         u:object_r:captouch_device:s0
 /dev/stune(/.*)?                      u:object_r:cgroup:s0
 /dev/elliptic(.*)?                    u:object_r:sound_device:s0
-/dev/lirc[0-9]*                       u:object_r:lirc_device:s0
 /dev/pn548                            u:object_r:nfc_device:s0
 /dev/sysmatdrv                        u:object_r:sysmatdrv_device:s0
 
@@ -59,7 +58,6 @@
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.gemini   u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.ir-service\.xiaomi                 u:object_r:hal_ir_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi              u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_8996      u:object_r:hal_lineage_touch_default_exec:s0
 
